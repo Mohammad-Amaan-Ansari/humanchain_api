@@ -13,7 +13,7 @@ This is a simple RESTful API built with **Ruby on Rails** to log and manage hypo
 - **Database:** Postgresql (for development)
 - **ORM:** ActiveRecord
 - **Cretae user:** ror
-- **PAssword:** 1234
+- **Password:** 1234
 
 ---
 
@@ -30,7 +30,7 @@ Make sure you have Ruby and Bundler installed.
 bundle install
 
 3. Setup Database
-bin/rails db:create db:migrate
+bin/rails db:create && rails db:migrate
 
 bin/rails db:seed
 You can find these sample records in the db/seeds.rb file.
