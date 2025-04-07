@@ -1,0 +1,19 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  host: localhost
+  username: ror
+  password: 1234
+  pool: 5
+
+development:
+  <<: *default
+  database: humanchain_api_development
+
+test:
+  <<: *default
+  database: humanchain_api_test
+
+production:
+  <<: *default
+  database: humanchain_api_production
